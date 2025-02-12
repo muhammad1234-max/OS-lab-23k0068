@@ -5,20 +5,25 @@
 #include <sys/wait.h>
 
 int main() {
-    pid_t pid = fork();  // Create a child process
+    pid_t child1, child2;
 
-    if (pid < 0) {
-        perror("Fork failed");
-        exit(1);
-    } else if (pid == 0) {  // Child process
-        printf("Child Process: PID = %d, Parent PID = %d\n", getpid(), getppid());
-        execlp("/bin/ls", "ls", NULL);  // Execute 'ls' command
-        perror("Exec failed");
-        exit(1);
-    } else {  // Parent process
-        wait(NULL);  // Wait for child to finish
-        printf("Parent Process: PID = %d\n", getpid());
+    child1 = fork(); // First child process
+    if (child1 == 0) {
+        printf("Child 1: My PID is %d\n", getpid());
+        exit(0);
+    } 
+
+    child2 = fork(); // Second child process
+    if (child2 == 0) {
+        printf("Child 2: My Parent PID is %d\n", getppid());
+        exit(0);
     }
+
+    // Parent waits for both child processes
+    wait(NULL);
+    wait(NULL);
+
+    printf("Parent: Both child processes have terminated.\n");
 
     return 0;
 }
