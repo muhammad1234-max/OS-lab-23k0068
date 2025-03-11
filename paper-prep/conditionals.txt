@@ -1,0 +1,31 @@
+1  
+-eq  
+=  
+Equal to  
+[[ $count -eq 10 ]]  
+2  
+-ne  
+!=  
+Not equal to  
+[[ $total -ne 1000 ]]  
+3  
+-lt  
+<  
+Less than  
+[[ $balance -lt 0 ]]  
+4  
+-le  
+ <= 
+Less than or equal to  
+[[ $C -le $B ]]  
+5  
+-gt  
+>  
+Greater than  
+[[ 5 -gt 6 ]]  
+6  
+-ge  
+ >= 
+Greater than or equal to  
+[[ $total -ge $subtotal ]]  
+
