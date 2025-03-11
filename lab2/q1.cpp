@@ -1,30 +1,29 @@
 #include <iostream>
-#include <fstream>
 
-int main(int argc, char* argv[]) {
-    // Check if a file name is provided as a command-line argument
-    if (argc != 2) {
-        std::cerr << "Usage: " << argv[0] << " <filename>\n";
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    int *arr = new int[argc - 1];
+    int sum = 1;
+    int avg;
+
+    if (argc < 2)
+    {
+        cerr << "Error: No integers provided.\n";
+        cerr << "Usage: " << argv[0] << " <integer1> <integer2> ...\n";
         return 1;
     }
 
-    // Open the file
-    std::ifstream file(argv[1]);
-
-    // Check if the file opened successfully
-    if (!file) {
-        std::cerr << "Error: Could not open file " << argv[1] << "\n";
-        return 1;
+    for (int i = 0; i < argc - 1; i++)
+    {
+        arr[i] = atoi(argv[i + 1]);
+        sum = sum + arr[i];
     }
 
-    // Read and display the file contents
-    std::string line;
-    while (std::getline(file, line)) {
-        std::cout << line << "\n";
-    }
+    avg = sum / argc;
 
-    // Close the file
-    file.close();
-    
+    cout << "the sum is " << sum << " and the average is " << avg << endl;
+
     return 0;
 }
