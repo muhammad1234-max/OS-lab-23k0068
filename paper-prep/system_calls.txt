@@ -1,0 +1,20 @@
+fork() – Creates a new process (child process).
+exec() – Replaces the current process image with a new process.
+wait() – Parent process waits for the child process to terminate.
+exit() – Terminates a process.
+getpid() – Retrieves the process ID of the calling process.
+getppid() – Retrieves the parent process ID.
+kill() – Sends a signal to a process.
+sleep() – Causes the calling process to suspend execution for a specified time.
+open() – Opens a file.
+read() – Reads from a file descriptor.
+write() – Writes to a file descriptor.
+close() – Closes an open file descriptor.
+lseek() – Repositions the file offset of an open file descriptor.
+pipe() – Creates an inter-process communication channel.
+dup() / dup2() – Duplicates a file descriptor.
+mmap() – Maps files or devices into memory.
+shmget() – Allocates a shared memory segment.
+shmat() – Attaches a shared memory segment.
+shmdt() – Detaches a shared memory segment.
+shmctl() – Performs operations on shared memory.
