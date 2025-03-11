@@ -1,0 +1,49 @@
+ls – Lists all files and directories in the current directory.
+pwd – Prints the absolute path of the current working directory.
+cd [directory] – Changes the current directory to the specified directory.
+mkdir [directory] – Creates a new directory.
+rmdir [directory] – Removes an empty directory.
+rm [file] – Removes a file.
+rm -r [directory] – Removes a directory and its contents recursively.
+cp [source] [destination] – Copies a file or directory to a specified location.
+mv [source] [destination] – Moves or renames a file or directory.
+touch [file] – Creates an empty file or updates the timestamp of an existing file.
+cat [file] – Displays the contents of a file.
+nano [file] – Opens a file in the Nano text editor.
+vim [file] – Opens a file in the Vim text editor.
+head [file] – Displays the first 10 lines of a file.
+tail [file] – Displays the last 10 lines of a file.
+grep "[pattern]" [file] – Searches for a pattern in a file.
+find [directory] -name [filename] – Searches for a file in a specified directory.
+chmod [permissions] [file] – Changes file permissions.
+chown [owner]:[group] [file] – Changes the owner and group of a file.
+df -h – Displays the available disk space in human-readable format.
+du -sh [directory] – Shows the disk usage of a directory.
+ps – Displays currently running processes.
+top – Shows real-time process activity.
+kill [PID] – Terminates a process using its Process ID.
+pkill [process_name] – Kills a process by its name.
+tar -cvf [archive.tar] [directory] – Creates a tar archive of a directory.
+tar -xvf [archive.tar] – Extracts the contents of a tar archive.
+zip [archive.zip] [file/directory] – Compresses files into a zip archive.
+unzip [archive.zip] – Extracts files from a zip archive.
+wget [URL] – Downloads a file from the internet.
+curl [URL] – Fetches data from a URL.
+ping [host] – Checks connectivity to a host.
+ifconfig – Displays network configuration details.
+netstat -tulnp – Shows active network connections.
+ssh [user]@[host] – Connects to a remote machine via SSH.
+scp [file] [user]@[host]:[destination] – Securely copies a file to a remote machine.
+history – Displays the command history.
+alias [name]='command' – Creates an alias for a command.
+unalias [name] – Removes an alias.
+echo "[text]" – Prints text to the terminal.
+env – Displays environment variables.
+export [variable]=[value] – Sets an environment variable.
+man [command] – Displays the manual page for a command.
+whoami – Displays the current user.
+uptime – Shows system uptime.
+date – Displays the current date and time.
+cal – Shows the calendar.
+shutdown -h now – Shuts down the system immediately.
+reboot – Restarts the system.
